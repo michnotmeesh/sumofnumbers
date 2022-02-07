@@ -20,13 +20,12 @@ function sumWhile(list) {
 
 console.log(sumWhile([1, 2, 3])); // print 6
 
-// function sumRecursion(list) {
-//   if (list.length == 0) {
-//     return 0;
-//   } else {
-//     return list[0] + sum(list[list.length - 1]);
-//   }
-// }
+function sumRecursion(list) {
+  if (list.length === 0) {
+    return 0;
+  }
+  return list[0] + sumRecursion(list.slice(1, nums.length));
+}
 
 function sumTheSimpleWay(list) {
   return _.reduce(list, function(memo, num) {return memo + num;}, 0);
