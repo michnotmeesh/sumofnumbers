@@ -6,7 +6,7 @@ function sumFor(list) {
   return sum;
 }
 
-console.log(sumFor[1, 2, 3]); // print 6
+console.log(sumFor([1, 2, 3])); // print 6
 
 function sumWhile(list) {
   let i = 0;
@@ -18,7 +18,7 @@ function sumWhile(list) {
   return sum;
 }
 
-console.log(sumWhile[1, 2, 3]); // print 6
+console.log(sumWhile([1, 2, 3])); // print 6
 
 // function sumRecursion(list) {
 //   if (list.length == 0) {
@@ -32,4 +32,4 @@ function sumTheSimpleWay(list) {
   return _.reduce(list, function(memo, num) {return memo + num;}, 0);
 }
 
-console.log(sumTheSimpleWay[1, 2, 3]); // print 6
+console.log(sumTheSimpleWay([1, 2, 3])); // print 6
